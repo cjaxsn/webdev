@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Grid Multi</title>
+        <style>
+            .container1 {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 0px;
+                font-size: 14pt;
+                
+            }
+            .container1 div
+            {
+                background-color: aqua;
+                border: 1px solid #000000;
+            }
+            #col4
+            {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Grid Multi</h1>
+        
+        <div class="container1">
+            <div class="col1">1 - </div>
+            <div class="col2">2 -</div>
+            <div class="col3">3 - </div>
+            <div class="col4" id="col4">4 - Spanned</div>
+            <!--<div class="col5">5 - </div>-->
+            <div class="col6">6 - </div>
+            <div class="col7">7 - </div>
+            <div class="col8">8 - </div>
+            <div class="col9">9 - </div>
+        </div>
+    </body>
+</html>
