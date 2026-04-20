@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .container
+    {
+        width: 100%;
+        height: 70%;
+        border: 1px solid black;
+    }
+
+    #photo
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+/*
+object-fit:
+
+contain: The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box. The entire object
+is made to fill the box, while preserving its aspect ratio, so the object will be "letterboxed" or "pillarboxed" if its aspect ratio does
+not match the aspect ratio of the box.
+results: 
+
+cover: The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. If the object's aspect
+ratio does not match the aspect ratio of its box, then the object will be clipped to fit.
+results: 
+
+fill: The replaced content is sized to fill the element's content box. This is the initial value. The entire object will completely fill
+the box. If the object's aspect ratio does not match the aspect ratio of its box, then the object will be stretched to fit.
+
+none: The replaced content is not resized.
+
+scale-down: The content is sized as if none or contain were specified, whichever would result in a smaller concrete object size.
+*/
+</style>
+</head>
+<body style="height: 100%;">
+
+<h2>Object-fit</h2>
+<div class="container">
+  <img id="photo" src="images/woman2.webp">
+</div>
+
+</body>
+</html>
