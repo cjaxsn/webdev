@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Responsive Profile</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-rows: 20px minmax(400px, auto) 300px 100px;
+                grid-row-gap: 0px;
+                font-size: 12pt;
+                height: 100%;
+            }
+            div.photo
+            {
+                position: relative;
+                padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            }
+            .wrapper
+            {
+                position: relative;
+                padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            }
+            img
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="name">Name: Leah</div>
+            <div class="photo">
+                <img src="images/woman1.webp"/>
+            </div>
+            <div class="details">Details</div>
+            <div class="row4">Row 4</div>
+        </div>
+    </body>
+</html>
