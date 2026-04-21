@@ -33,7 +33,6 @@
                 background-color: #FFFFCC;
             }
         </style>
-       
     </head>
     <body>
         <div class="container">
@@ -58,7 +57,18 @@
                 <li>BIO: blah blah blah</li>
                 </ul>
             </div>
-            <div class="row4">Row 4 - Additional Info</div>
+            <div class="row4">
+                screen.width:<span id="sw"></span><br/>
+                screen.availWidth:<span id="availw"></span><br/>
+                screen.height:<span id="sh"></span><br/>
+                screen.availHeight:<span id="availh"></span>
+            </div>
         </div>
+        <script type="text/javascript">
+            document.getElementById("sw").innerHTML = screen.width;
+            document.getElementById("availw").innerHTML = screen.availWidth;
+            document.getElementById("sh").innerHTML = screen.height;
+            document.getElementById("availh").innerHTML = screen.availHeight;
+        </script>
     </body>
 </html>
